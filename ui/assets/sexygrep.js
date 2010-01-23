@@ -17,7 +17,7 @@ SexyGrep.prototype =
 			units: 
 			[ 
 				{ position: 'top', height:140, body: 'top' },
-				{ position: 'center', body:'center' },
+				{ position: 'center', body:'center', scroll:true },
 				{ position: 'bottom', height:60, body:'bottom',scroll:true } 
 			] 
 		});
@@ -55,7 +55,7 @@ SexyGrep.prototype =
         
         var config = 
         {
-	        scrollable:true,
+	        /*scrollable:true,*/
 	        width:"100%",
     		paginator : new YAHOO.widget.Paginator(
     		{
