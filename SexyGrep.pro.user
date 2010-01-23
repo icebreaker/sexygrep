@@ -59,7 +59,7 @@
    <value key="QtVersionId" type="int">0</value>
    <value key="ToolChain" type="int">0</value>
    <value key="buildConfiguration" type="int">2</value>
-   <value key="buildDirectory" type="QString">/home/c0d3rguy/Projects/SexyGrep</value>
+   <value key="buildDirectory" type="QString">/home/c0d3rguy/Projects/sexygrep</value>
    <value key="clearSystemEnvironment" type="bool">false</value>
    <value key="useShadowBuild" type="bool">true</value>
    <valuelist key="userEnvironmentChanges" type="QVariantList"/>
