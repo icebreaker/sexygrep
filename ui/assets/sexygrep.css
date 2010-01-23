@@ -1,0 +1,14 @@
+.yui-skin-sam .yui-dt-liner 
+{ 
+	white-space:nowrap; 
+}
+.yui-skin-sam dl dt 
+{
+	clear:left;
+	float:left;
+	width:70px;
+}
+.yui-skin-sam #top
+{
+	padding:5px;
+}

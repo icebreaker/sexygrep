@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+	<head> 
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+		<title>Sexy Grep</title> 
+ 
+		<link rel="stylesheet" type="text/css" href="assets/build/fonts/fonts-min.css" /> 
+		<link rel="stylesheet" type="text/css" href="assets/build/datatable/assets/skins/sam/datatable.css" /> 
+		<link rel="stylesheet" type="text/css" href="assets/build/layout/assets/skins/sam/layout.css" /> 
+		<link rel="stylesheet" type="text/css" href="assets/build/paginator/assets/skins/sam/paginator.css" /> 
+		<link rel="stylesheet" type="text/css" href="assets/build/container/assets/skins/sam/container.css" /> 
+		<script type="text/javascript" src="assets/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+		<script type="text/javascript" src="assets/build/element/element-min.js"></script> 
+		<script type="text/javascript" src="assets/build/paginator/paginator-min.js"></script> 
+		<script type="text/javascript" src="assets/build/datasource/datasource-min.js"></script> 
+		<script type="text/javascript" src="assets/build/datatable/datatable-min.js"></script> 
+		<script type="text/javascript" src="assets/build/container/container_core-min.js"></script> 
+		<script type="text/javascript" src="assets/build/container/container-min.js"></script> 
+		<script type="text/javascript" src="assets/build/resize/resize-min.js"></script> 
+		<script type="text/javascript" src="assets/build/layout/layout-min.js"></script> 
+
+		<link rel="stylesheet" type="text/css" href="assets/sexygrep.css" />
+		<script type="text/javascript" src="assets/sexygrep.js"></script> 
+		
+		<script type="text/javascript">
+			YAHOO.util.Event.addListener(window,"load",function()
+			{
+				// init
+				SexyGrep.getInstance("sexy-grep");
+			});
+		</script>
+	</head>
+	<body class="yui-skin-sam">
+		<div id="top">
+			<dl>
+				<dt>Look for:</dt>
+				<dd>
+					<input type="text" id="sexy-grep-text" size="64" onchange="SexyGrep.getInstance().setText(this.value);"/>
+					<input type="button" value="Grep Baby!" onclick="SexyGrep.getInstance().search();"/>	
+				</dd>
+				
+				<dt>Filter:</dt>
+				<dd>
+					<input type="text" id="sexy-grep-filter" size="64" onchange="SexyGrep.getInstance().setFilter(this.value);"/>
+				</dd>
+				
+				<dt>Look in:</dt>
+				<dd>
+					<input type="text" id="sexy-grep-in" size="64" disabled="disabled"/>
+					<input type="button" value="Browse" onclick="SexyGrep.getInstance().setDirectory();"/>
+				</dd>
+				
+				<dt>&nbsp;</dt>
+				<dd>
+					<input type="checkbox" id="sexy-grep-recursive" onclick="SexyGrep.getInstance().setRecursive(this.checked);"/>
+					<label for="sexy-grep-recursive">Recursive</label>
+				</dd>
+			</dl>
+		</div>
+		<div id="center">
+			<div id="sexy-grep-results"></div>
+		</div>
+		<div id="bottom">
+			<div id="sexy-grep-pagination"></div>
+		</div>
+	</body> 
+</html> 
+
